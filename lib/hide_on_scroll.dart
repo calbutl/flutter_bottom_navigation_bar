@@ -23,8 +23,8 @@ class _HideOnScrollState extends State<HideOnScroll>
   @override
   void initState() {
     super.initState();
-    animationController =
-        AnimationController(vsync: this, duration: Duration(milliseconds: 300));
+    animationController = AnimationController(
+        value: 1, vsync: this, duration: Duration(milliseconds: 300));
 
     _pages = <Widget>[
       CallsPage(
